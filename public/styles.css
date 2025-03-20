@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;;
+}
+
+html, body{
+    overflow-x: hidden;  
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+
+header {
+    position: fixed;
+    top: 20;
+    width: 100%;
+    z-index: 12;
+}
+
+header .nav-bar {
+    
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(226, 236, 255);
+    padding: 10px 4%;
+    z-index: 10;
+    border-bottom: 1px solid #ddd; /* Add border for better visibility */
+}
+
+
+
+nav a {
+    padding: 18px 8px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+nav a:hover{
+    background: #2563EB;
+    color: white;
+}
+
+.d-icon{
+    position: absolute;
+    right: 50px;
+    top: -100px;
+    cursor: pointer;
+}
+.toggle{
+    right: -15px;
+}
+.close-icon{
+    display: none;
+}
+header i:nth-of-type(even){
+    cursor: pointer;
+    right: -100px;
+}
+
+/* responsive nav bar  */
+@media screen and (max-width: 900px) {
+    
+    .nav-bar{
+    }
+    nav{
+        width: 300px;
+        padding: 10px;
+        position: absolute;
+        right: -500px;
+        top: 86px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        transition: .7s ease-out;
+    }
+    nav a{
+        padding: 5px 0;
+        color: black;
+        padding: 4px;
+    }
+    .login{
+        top: 40px;
+        right: 60px;
+        position: fixed;
+        width: 80px;
+        text-align: center;
+        animation: none;
+    }
+    nav a:hover{
+        background: rgb(13, 126, 255);
+    }
+    .nav-bar #contact{
+        margin-right: 30px;
+    }
+    .d-icon{
+        top: 40px;
+        right: 4%;
+    }
+    .nav-bar i:nth-of-type(even){
+        top: 38px;
+        right: 3%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .address{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login{
+        top: 63px;
+    }
+    .d-icon, .nav-bar i:nth-of-type(even){
+        top: 65px;
+    }
+    nav{
+        top: 110px;
+    }
+}
+
+/* home css  */
+.hero{
+    width: 100%;
+    height: auto;
+    background-image: url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.slider {
+    display: none;                 /* Initially hide the slides */
+    z-index: -1;                 /* Send all slides to the back */
+    transition: opacity 1s ease-in-out; /* Fade transition */
+    opacity: 0;
+  }
+  
+  /* Style for the active slider */
+  .slider.active {
+    display: block;                  /* Make the active slide visible */
+    z-index: 1;
+    opacity: 1;                  /* Bring the active slide on top */
+  }
+/* hero cards  */
+
+.hero-card:hover .hero-desc{
+    border-radius: 0;
+    transition: .4s ease;
+    width: 100%;
+    height: 350px;
+    right: 0;
+}
+
+.hero-card-p {
+    position: absolute;
+    bottom: -200px;
+    padding: 4%;
+    z-index: 10;
+    transition: .5s ease-out;
+}
+.hero-card:hover .hero-card-p {
+    bottom: 25%;
+} 
+
+/* team css  */
+
+.team-card:hover{
+    box-shadow: 4px 4px 10px 1px rgb(194, 194, 194);
+}
+
+/* Optionally, make sure to transition max-height and opacity smoothly */
+.accordion-content {
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  /* table  */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 4px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}

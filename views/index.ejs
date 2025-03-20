@@ -1,0 +1,393 @@
+<%- include("includes/head.ejs") %>
+<%- include("includes/flash.ejs") %>
+    <!-- hero section  -->
+    <main id="home" style="padding: 100px 4%; margin-top: 80px;" class=" hero">
+        <!-- hero 1 -->
+        <div class="w-full  slider">
+            <div class="w-full h-[90vh] flex md:flex-row flex-col gap-4 justify-between items-center">
+                <div class="md:w-3/5 mt-6 w-full text-white home-text">
+                    <h2 class="text-5xl font-bold">Web Development </h2>
+                    <p id="home-p" class="mt-4">We want to help you build beautiful, accessible, fast, and secure
+                        websites
+                        that
+                        work
+                        cross-browser, and for all of your users. This site is our home for content to help you on that
+                        journey,
+                        written by members of the Chrome team, and external experts who specialize in web development
+                        topics
+                        such as accessibility, performance, design, and more.</p>
+                    <button
+                        class="mt-4 bg-gray-300 px-4 py-2 text-black font-semibold pointer rounded-md  hover:bg-blue-500 hover:text-white ">
+                        <a href="/contact">Contact Us</a>
+                    </button>
+                </div>
+
+                <div class="md:w-1/3 w-2/3 home-img ">
+                    <img class="float-right w-full"
+                        src="https://media.licdn.com/dms/image/v2/D5612AQEhKguQVjXr4g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1693971265825?e=2147483647&v=beta&t=_eC7LaTUoFGro7jGKXH19Mjjjlw6SgzIqM2QcLbLhP8"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- hero 2 -->
+        <div class=" slider">
+            <div class="w-full flex md:flex-row flex-col gap-4 justify-between items-center">
+                <div class="md:w-3/5 mt-6 w-full text-white home-text">
+                    <h2 class="text-5xl font-bold">Android Development </h2>
+                    <p id="home-p" class="mt-4">Bring your ideas to life with our top-tier Android app development
+                        services. We specialize in creating dynamic, user-friendly, and high-performance Android
+                        applications that cater to your specific business goals. From the initial concept to the final
+                        product, we craft customized apps that provide exceptional user experiences and stand out in the
+                        Google Play Store!</p>
+                    <button
+                        class="mt-4 bg-gray-300 px-4 py-2 text-black font-semibold pointer rounded-md hover:bg-blue-500 hover:text-white ">
+                        <a href="/contact">Contact Us</a>
+                    </button>
+                </div>
+
+                <div class="md:w-1/3 w-2/3 home-img">
+                    <img class="float-right w-full" src="/assets/android.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- hero 3 -->
+        <div class=" slider">
+            <div class="w-full h-[100vh]  flex md:flex-row flex-col gap-4 justify-between items-center">
+                <div class="md:w-3/5 mt-6 w-full text-white home-text">
+                    <h2 class="text-5xl font-bold">iOS Development </h2>
+                    <p id="home-p" class="mt-4">Unlock the potential of your ideas with our expert iOS app development
+                        services. We turn your vision into a seamless, user-friendly, and high-performance mobile
+                        experience, tailored to meet your unique business needs. From concept to launch, we ensure a
+                        smooth and innovative app that stands out in the App Store!</p>
+                    <button
+                        class="mt-4 bg-gray-300 px-4 py-2 text-black font-semibold pointer rounded-md hover:bg-blue-500 hover:text-white ">
+                        <a href="/contact">Contact Us</a>
+                    </button>
+                </div>
+
+                <div class="md:w-1/3 w-2/3 home-img">
+                    <img class="float-right w-full" src="/assets/ios.webp" height="400" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- https://www.vhv.rs/dpng/d/423-4233465_png-library-mobile-apps-developer-development-company-android.png -->
+    </main>
+
+    <!-- HOme cards  -->
+    <section style="padding: 0 4% ; margin-top: -50px;"
+        class=" width-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 bg-transparent home-cards-container">
+        <div
+            class="relative flex flex-col items-center justify-center bg-white border-2 border-black p-12 gap-2 rounded-lg overflow-hidden hero-card">
+            <p class="hero-card-p"> Elevate your online presence with our expert web development and design services,
+                creating stunning, responsive websites that engage users and drive results!</p>
+            <div class="absolute -top-6 -right-4 rounded-full h-20 w-20 bg-blue-400 p-8 hero-desc">
+            </div>
+            <img class="h-28" src="https://flowndeveloper.com/wp-content/uploads/2023/12/ux.svg" alt="">
+            <h3 class="text-xl font-semibold">Web Development</h3>
+            <p class="text-gray-500 ">& Web Design</p>
+        </div>
+        <div
+            class="relative flex flex-col items-center justify-center bg-white border-2 border-black p-12 gap-2 rounded-lg overflow-hidden hero-card">
+            <p class="hero-card-p">Get high-quality, cost-effective solutions and services that maximize value and drive
+                business growth without breaking the bank!</p>
+            <div class="absolute -top-6 -right-4 rounded-full h-20 w-20 bg-blue-400 p-8 hero-desc"></div>
+            <img class="h-28" src="	https://flowndeveloper.com/wp-content/uploads/2023/12/rupee.svg" alt="">
+            <h3 class="text-xl font-semibold">Cost Effective </h3>
+            <p class="text-gray-500 ">Web Solution</p>
+        </div>
+        <div
+            class="relative flex flex-col items-center justify-center bg-white border-2 border-black p-12 gap-2 rounded-lg overflow-hidden hero-card">
+            <p class="hero-card-p">Turn your ideas into high-performance iOS apps with our expert development,
+                delivering seamless user experiences that stand out in the Google Play Store!
+            </p>
+            <div class="absolute -top-6 -right-4 rounded-full h-20 w-20 bg-blue-400 p-8 hero-desc"></div>
+            <img class="h-28"
+                src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-app-development-illustration-download-in-svg-png-gif-file-formats--software-developer-engineer-technology-pack-network-communication-illustrations-2928725.png?f=webp"
+                alt="">
+            <h3 class="text-xl font-semibold">iOS Design </h3>
+            <p class="text-gray-500 hover:scale-150">& Development</p>
+        </div>
+
+    </section>
+
+    <!-- About Section  -->
+    <span class="sm:w-40 w-24 h-1 sm:mb-3 mb-2 mt-24 mr-4 bg-blue-500 inline-block"></span>
+    <h2 class="sm:text-4xl text-3xl font-bold text-blue-500 inline ">ABOUT US!</h2>
+
+    <section id="about" style="padding: 0 4% 0; margin-top: -30px;">
+        <div class=" flex md:flex-row flex-col gap-4 justify-between items-center about-anime">
+            <div class="lg:w-2/4 w-5/6 about-img">
+                <img class="float-left w-full"
+                    src="https://flowndeveloper.com/wp-content/uploads/2023/12/5569517_2889111.svg" alt="klua">
+            </div>
+            <div class="md:w-3/5 mt-6 w-full text-black">
+                <h3 class="text-4xl font-bold about-head mb-4">Tech On Globe - One of the Top Software Development
+                    Company
+                </h3>
+                <p class=" about-p">100% Trusted and Registered Company in India with a professional website that
+                    provides the best web development and web design services in India. We are a company that offers
+                    multi-functional web portals, and we make sure that a well-developed and attractive website can help
+                    our clients to record ROI-driven results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- our services  -->
+    <span class="sm:w-40 w-24 h-1 sm:mb-3 mb-2 mt-24 mr-4 bg-blue-500 inline-block"></span>
+    <h2 class="sm:text-4xl text-3xl font-bold text-blue-500 inline ">OUR SERVICES!</h2>
+    <section id="service" style="padding: 0 4% 0;">
+        <p class="mt-8">We are a One-Stop Solution for delivering the best web design and development services. We
+            render customized and affordable web design facilities to suit your requirements. Choose the best plans for
+            building a responsive web design according to your needs.</p>
+        <div class=" width-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 mt-10 services">
+            <div
+                class="relative group bg-white border-2 hover:bg-blue-200 transition-out duration-200 border-blue-500 p-5 gap-2 rounded-lg overflow-hidden">
+
+                <div
+                    class="absolute top-6 transition-out duration-200 group-hover:bg-white -right-10 rounded-full w-28 h-12 bg-blue-200 flex items-center ">
+                    <span class="ml-6 text-blue-500 hover:bg-white text-2xl font-semibold">01</span></div>
+
+                <img class="h-16 mb-2" src="https://flowndeveloper.com/wp-content/uploads/2023/12/template.svg" alt="">
+                <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+                <p>
+                    Incorporate the best website designs using high-end User Interaction
+                    technologies like Adobe XD, Figma, etc. Launch your own global identity with our experts, who carry
+                    great expertise in web design from scratch to end.
+                </p>
+            </div>
+            <div
+                class="relative group bg-white border-2 hover:bg-blue-200 transition-out duration-200 border-blue-500 p-5 gap-2 rounded-lg overflow-hidden">
+                <img class="h-16 mb-2" src="https://flowndeveloper.com/wp-content/uploads/2023/12/responsive.svg"
+                    alt="">
+                <h3 class="text-xl font-semibold mb-2">100% Responsive Developemnt </h3>
+                <p>Website responsiveness is a very critical parameter for the success of your
+                    business venture. Get your device responsive website design to reach your potential audience across
+                    all devices. Trending technologies and frameworks are available for 100% website responsiveness.</p>
+                <div
+                    class="absolute top-6 transition-out duration-200 group-hover:bg-white -right-10 rounded-full w-28 h-12 bg-blue-200 flex items-center ">
+                    <span class="ml-6 hover:bg-white text-blue-500 text-2xl font-semibold">02</span></div>
+            </div>
+            <div
+                class="relative group bg-white border-2  hover:bg-blue-200 transition-out duration-200 border-blue-500 p-5 gap-2 rounded-lg overflow-hidden">
+                <img class="h-16 mb-2" src="https://flowndeveloper.com/wp-content/uploads/2023/12/app-development.svg"
+                    alt="">
+                <h3 class="text-xl font-semibold mb-2">Web Development </h3>
+                <p>We are the best web design company in India with highly experienced coders. Our
+                    way of working is very cool, and our potential to deliver top-notch websites is commendable. We
+                    focus on demanding technologies, frameworks, and tools.</p>
+                <div
+                    class="absolute top-6 transition-out duration-200 group-hover:bg-white -right-10 rounded-full w-28 h-12 bg-blue-200 flex items-center ">
+                    <span class="ml-6 text-blue-500 hover:bg-white text-2xl font-semibold">03</span></div>
+
+
+                <!-- <p class="text-gray-500 hover:scale-150">& Development</p> -->
+            </div>
+            <div
+                class="relative group bg-white border-2  hover:bg-blue-200 transition-out duration-200 border-blue-500 p-5 gap-2 rounded-lg overflow-hidden">
+                <img class="h-16 mb-2" src="https://technoderivation.com/assets/images/vector/ios-development.png"
+                    alt="">
+                <h3 class="text-xl font-semibold mb-2">iOS Development </h3>
+                <p>We are the best web design company in India with highly experienced coders. Our
+                    way of working is very cool, and our potential to deliver top-notch websites is commendable. We
+                    focus on demanding technologies, frameworks, and tools.</p>
+                <div
+                    class="absolute top-6 transition-out duration-200 group-hover:bg-white -right-10 rounded-full w-28 h-12 bg-blue-200 flex items-center ">
+                    <span class="ml-6 text-blue-500 hover:bg-white text-2xl font-semibold">04</span></div>
+
+                <!-- <p class="text-gray-500 hover:scale-150">& Development</p> -->
+            </div>
+            <div
+                class="relative group bg-white hover:bg-blue-200 transition-out duration-200 border-2  border-blue-500 p-5 gap-2 rounded-lg overflow-hidden">
+                <img class="h-16 mb-2"
+                    src="assets/software.png" alt="">
+                <h3 class="text-xl font-semibold mb-2">Software Development </h3>
+                <p>Delivering innovative, robust software development solutions that are tailored to
+                    your business needs, ensuring high performance, scalability, and seamless integration to drive
+                    success and growth at every stage of your digital journey!</p>
+                <div
+                    class="absolute top-6 transition-out duration-200 group-hover:bg-white -right-10 rounded-full w-28 h-12 bg-blue-200 flex items-center ">
+                    <span class="ml-6 text-blue-500 hover:bg-white text-2xl font-semibold">05</span></div>
+
+            </div>
+            <div
+                class="relative group bg-white border-2 hover:bg-blue-200 transition-out duration-200 border-blue-500 p-5 gap-2 rounded-lg overflow-hidden">
+                <img class="h-16 mb-2"
+                    src="assets/android-development.png"
+                    alt="">
+                <h3 class="text-xl font-semibold mb-2">Android Development </h3>
+                <p>Building cutting-edge, high-performance Android apps tailored to your business
+                    needs, ensuring seamless user experiences, smooth functionality, and unmatched performance to help
+                    you stand out in the competitive mobile market!</p>
+                <div
+                    class="absolute top-6 transition-out duration-200 group-hover:bg-white -right-10 rounded-full w-28 h-12 bg-blue-200 flex items-center ">
+                    <span class="ml-6 text-blue-500 text-2xl font-semibold">06</span></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our team  -->
+     <span class="sm:w-40 w-24 h-1 sm:mb-3 mb-2 mt-24 mr-4 bg-blue-500 inline-block"></span>
+    <h2 class="sm:text-4xl text-3xl font-bold text-blue-500 inline ">OUR TEAM!</h2>
+    <section id="team" style="padding: 0 4% 0;">
+        <div class=" width-full grid lg:grid-cols-4 sm:grid-cols-2 gap-10 mt-10 services">
+            <div class="relative p-2 transition-out overflow-hidden duration-300 team-card">
+                <img class="transition-out duration-600"
+                    src="https://media.licdn.com/dms/image/v2/C5103AQHdwE6Yu7GVlA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1530988673406?e=1746662400&v=beta&t=uQLjVLwhwu5DtQLbs3Ma3vkfMcJ1pftjR0bipMBHezQ"
+                    alt="">
+                <div class="">
+                    <h2 class="text-xl font-semibold">Mohammad Muqtada</h2>
+                    <p>Founder</p>
+                    <p class="text-gray-500">Full stack developer (6+ years)</p>
+                    <div class=" social-links mt-1">
+                        <i class="ri-linkedin-fill text-2xl "></i>
+                        <i class="ri-github-line text-2xl "></i>
+                        <i class="ri-twitter-x-line text-2xl "></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="relative p-2 transition-out overflow-hidden duration-300 team-card">
+                <img src="/assets/sarfaraj.jpg"
+                    alt="" width="100%">
+                <div>
+                    <h2 class="text-xl font-semibold">Sarfaraj Sheikh</h2>
+                    <p class="text-gray-500">Full stack developer</p>
+                    <div class=" social-links mt-1">
+                        <i class="ri-linkedin-fill text-2xl"></i>
+                        <i class="ri-github-line text-2xl"></i>
+                        <i class="ri-twitter-x-line text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="relative p-2 transition-out overflow-hidden duration-300 team-card">
+                <img src="assets/arif.jpg"
+                    alt="">
+                <div>
+                    <h2 class="text-xl font-semibold">Mohammad Arif</h2>
+                    <p class="text-gray-500">Backend developer</p>
+                    <div class=" social-links mt-1">
+                        <i class="ri-linkedin-fill text-2xl"></i>
+                        <i class="ri-github-line text-2xl"></i>
+                        <i class="ri-twitter-x-line text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="relative p-2 transition-out overflow-hidden duration-300 team-card">
+                <img src="assets/rijwan.jpg"
+                    alt="">
+                <div>
+                    <h2 class="text-xl font-semibold">Md Rizwan</h2>
+                    <p class="text-gray-500">React JS developer</p>
+                    <div class=" social-links mt-1">
+                        <i class="ri-linkedin-fill text-2xl"></i>
+                        <i class="ri-github-line text-2xl"></i>
+                        <i class="ri-twitter-x-line text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our Tesimonials  -->
+
+    <span class="sm:w-40 w-24 h-1 sm:mb-3 mb-2 mt-24 mr-4 bg-blue-500 inline-block"></span>
+    <h2 class="sm:text-4xl text-3xl font-bold text-blue-500 inline ">WHAT OUR CLIENTS SAY!</h2>
+    <section style="padding: 0 4%;">
+        <!-- <div class="mt-10 w-full h-20 bg-red-400 gap-2">
+            <div class="w-96 h-20 bg-red-600 float-left"></div>
+            <div class="w-96 h-20 bg-red-600"></div>
+            <div class="w-96 h-20 bg-red-600"></div>
+        </div> -->
+        <div class="max-w-6xl mx-auto p-6">
+            <div class="relative">
+                <!-- Testimonial Carousel -->
+                <div id="testimonial-carousel" class="carousel overflow-hidden">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="testimonial-item p-6 bg-gray-100 grid gap-6 md:grid-cols-2 rounded-lg shadow-md text-center">
+                        <div>
+                            <img src="/assets/man.jpg" alt="Person 1" class="w-44 h-44 mx-auto rounded-full mb-4">
+                            <p class="text-lg text-gray-800 italic">"This service was amazing! It helped me grow my
+                                business
+                                in no time!"</p>
+                            <h3 class="font-semibold text-gray-900 mt-4">Raghuveer singh</h3>
+                            <p class="text-sm text-gray-500">Business Owner</p>
+                        </div>
+                        <div>
+                            <img src="/assets/ahana.jpg" alt="Person 1" class="w-44 h-44 mx-auto rounded-full mb-4">
+                            <p class="text-lg text-gray-800 italic">"This service was amazing! It helped me grow my
+                                business
+                                in no time!"</p>
+                            <h3 class="font-semibold text-gray-900 mt-4">Ahana bajaj</h3>
+                            <p class="text-sm text-gray-500">Enterpreneur</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="testimonial-item p-6 grid gap-6 md:grid-cols-2  bg-gray-100 rounded-lg shadow-md text-center">
+                        <div>
+                            <img src="/assets/man2.jpg" alt="Person 2" class="mx-auto rounded-full mb-4 h-44 w-44">
+                            <p class="text-lg text-gray-800 italic">"I love how easy and smooth the entire process was.
+                                Highly recommend!"</p>
+                            <h3 class="font-semibold text-gray-900 mt-4">Ganesh Shetty</h3>
+                            <p class="text-sm text-gray-500">Freelancer</p>
+                        </div>
+                        <div>
+                            <img src="/assets/sarfaraj.jpg" alt="Person 2" class="mx-auto rounded-full mb-4 h-44 w-44">
+                            <p class="text-lg text-gray-800 italic">"I love how easy and smooth the entire process was.
+                                Highly recommend!"</p>
+                            <h3 class="font-semibold text-gray-900 mt-4">Sarfaraz ahmad</h3>
+                            <p class="text-sm text-gray-500">Photographer</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="testimonial-item p-6  grid gap-6 md:grid-cols-2 bg-gray-100 rounded-lg shadow-md text-center">
+                        <div>
+                            <img src="/assets/didi.png" alt="Person 3" class=" w-44 h-44 mx-auto rounded-full mb-4">
+                            <p class="text-lg text-gray-800 italic">"A game-changer for my career. The support was
+                                excellent
+                                throughout!"</p>
+                            <h3 class="font-semibold text-gray-900 mt-4">Sarah Lee</h3>
+                            <p class="text-sm text-gray-500">Marketing Expert</p>
+                        </div>
+                        <div>
+                            <img src="/assets/alexander.jpg" alt="Person 3" class=" w-44 h-44 mx-auto rounded-full mb-4">
+                            <p class="text-lg text-gray-800 italic">"Excellent service with fast delivery, great
+                                communication, and high-quality web development."</p>
+                            <h3 class="font-semibold text-gray-900 mt-4">Alexander</h3>
+                            <p class="text-sm text-gray-500">Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+                <button id="next"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer  -->
+    <%- include("includes/footer.ejs") %>
+
+        

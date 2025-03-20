@@ -1,0 +1,89 @@
+<%- include("includes/head.ejs") %>
+
+  <div class=" relative mx-auto max-w-full bg-center bg-cover text-center bg-no-repeat w-full h-96 bg-gray-300"
+   >
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2488419132683!2d77.27559848126538!3d28.562289463055453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce38c9ea28f03%3A0xcf085976f2110601!2sJamia%20Millia%20Islamia%2C%20Jamia%20Nagar%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1741856761627!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- contact us  -->
+  <section class="max-w-6xl mx-auto mt-8 p-6 py-8 bg-gray-100 mb-10 rounded-lg shadow-md">
+    <div class="flex flex-col md:flex-row items-center md:space-x-12">
+      <!-- Contact Details (Left Side) -->
+      <div class="md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
+        <img src="/assets/g.PNG" alt="logo" class="w-96">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+        <p class="text-lg text-gray-600 mb-2">
+          <strong>Phone:</strong> +91 9643397890
+        </p>
+        <p class="text-lg text-gray-600 mb-2">
+          <strong>Email:</strong> sarfaraja0869@gmail.com
+        </p>
+        <p class="text-lg text-gray-600">
+          <strong>Address:</strong> 123 Street Name, City, Country
+        </p>
+      </div>
+
+      <!-- Enquiry Form (Right Side) -->
+      <div class="sm:w-3/4 w-full">
+        <h2 class="text-3xl font-semibold text-center mb-6 md:text-left">Enquire Us</h2>
+        <form action="/clients" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Your Name <span
+                class="text-xl text-red-500">*</span></label>
+            <input type="text" id="name" name="name"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Your Email <span
+                class="text-xl text-red-500">*</span></label>
+            <input type="email" id="email" name="email"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              required>
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700">Your Phone Number <span
+                class="text-xl text-red-500">*</span></label>
+            <input type="number" id="phone" name="phone"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              required>
+          </div>
+          <div>
+            <label for="company" class="block text-sm font-medium text-gray-700">Company / Organization
+              <span>(optional)</span></label>
+            <input type="text" id="company" name="company"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="service" class="block text-sm font-medium text-gray-700">How can we help?<span
+                class="text-xl text-red-500">*</span></label>
+            <select name="service" id="" required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+              <option value="web development">web development </option>
+              <option value="Android development ">Android development </option>
+              <option value="web design">web design </option>
+              <option value="Solution">Solution </option>
+              <option value="Not Mentioned">Others </option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+            <textarea id="message" name="message" rows="4"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">want to try web development services
+                </textarea>
+          </div>
+          <div class="flex justify-start">
+            <button type="submit"
+              class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+              Send Enquiry
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer  -->
+  <%- include("includes/footer.ejs") %>
+    </body>
+
+    </html>

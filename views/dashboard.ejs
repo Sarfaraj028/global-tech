@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech On Gbobe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- google font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+<%- include("includes/flash.ejs") %>
+    <h2 class="text-center p-3 bg-blue-500 text-white text-3xl font-bold">
+        CLIENT INFORMATION TABLE
+    </h2>
+    <section style="position: relative; padding: 10px 4%; min-height: 70vh;" class=" w-full">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Company</th>
+                    <th>Service</th>
+                    <th>Message</th>
+                    <th>Date & Time</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <% for(client of clients) { %>
+                <tbody>
+                    <tr>
+
+                        <td>
+                            <%= client.name %>
+                        </td>
+                        <td>
+                            <%= client.email %>
+                        </td>
+                        <td>
+                            <%= client.phone %>
+                        </td>
+                        <td>
+                            <%= client.company %>
+                        </td>
+                        <td>
+                            <%= client.service %>
+                        </td>
+                        <td>
+                            <%= client.message %>
+                        </td>
+                        <td>
+                            <%= client.createdAt ? new Date(client.createdAt).toLocaleString() : 'No Date' %>
+                        </td>
+                        <td class="px-2">
+
+                            <form method="POST" action="/dashboard/<%=client._id%>?_method=DELETE">
+                                <button>
+                                    <i class="ri-delete-bin-6-line text-red-600 cursor-pointer"></i>
+                                </button>
+                            </form>
+                        </td>
+
+                    </tr>
+                </tbody>
+                <% } %>
+        </table>
+
+    </section>
+    <script>
+        // JavaScript to handle the close button functionality
+        const closeButton = document.querySelector('#close-btn');
+        const alertBox = document.querySelector('#alert-box');
+
+        // Add event listener to the close button
+        closeButton.addEventListener('click', () => {
+            alertBox.classList.add('hidden'); // Adds the 'hidden' class to hide the alert
+        });
+        
+    </script>
+    </body>
+
+    </html>
