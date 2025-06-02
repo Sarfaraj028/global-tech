@@ -144,7 +144,7 @@ app.use("/user", router)
 
 
 
-app.get("/*", (req, res) => {
+app.use((req, res) => {
   req.flash("error", `Page Not Found!`)
   res.redirect("/");
 });
