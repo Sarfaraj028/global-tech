@@ -4,13 +4,8 @@ import Client from "./models/client.model.js";
 import methodOverride from "method-override";
 // import bcrypt from "bcryptjs";
 import dotenv from "dotenv";
-import passport from "passport";
-import LocalStrategy from 'passport-local'
 import session from "express-session";
 import flash from "connect-flash"
-import User from "./models/user.model.js";
-import router from "./routes/user.route.js";
-import dashboardRoute from "./routes/dashboard.route.js";
 
 
 const app = express();
@@ -23,7 +18,6 @@ app.use(methodOverride("_method"));
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-
 
 app.use(flash());
 
@@ -41,46 +35,6 @@ app.use(
   })
 );
 
-
-// Initialize Passport
-app.use(passport.initialize());
-app.use(passport.session());
-
-// Passport local strategy
-passport.use(
-  new LocalStrategy(
-    {
-      usernameField: "email",
-      passwordField: "password",
-    },
-    async (email, password, done) => {
-      try {
-        const user = await User.findOne({ email });
-        if (!user)
-          return done(null, false, { message: "User Not Found." });
-
-        const isMatch = await user.comparePassword(password);
-        if (!isMatch)
-          return done(null, false, { message: "Wrong password." });
-        console.log("welcome user");
-        
-        return done(null, user);
-      } catch (err) {
-        return done(err);
-      }
-    }
-  )
-);
-
-// Serialize and deserialize user
-passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
-
-passport.deserializeUser(async (id, done) => {
-  const user = await User.findById(id);
-  done(null, user);
-});
 
 // Middleware to add flash messages to res.locals
 app.use((req, res, next) => { 
@@ -135,13 +89,6 @@ app.post("/clients", async (req, res) => {
     res.redirect("/");
   }
 });
-
-//dashboard Router
-app.use("/dashboard", dashboardRoute)
-
-//User ROuter
-app.use("/user", router)
-
 
 
 app.use((req, res) => {
